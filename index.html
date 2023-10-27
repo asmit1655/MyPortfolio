@@ -5,46 +5,215 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
         
         <!--=============== REMIX ICONS ===============-->
-        
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Mini portfolio website - Bedimcode</title>
+        <title>Portfolio website - Asmit Ashutosh</title>
     </head>
     <body>
         <!--=============== HEADER PROFILE ===============-->
         <header class="profile container">
-            
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="assets/img/perfil.png" >
+                        </div>
+                    </div>
+                    <h2 class="profile__name">Asmit Ashutosh</h2>
+                    <h3 class="profile__profession">Web Developer</h3>
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/imnot_asmit/" target="_blank" class="profile__social-link"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/asmit-ashutosh-57047b275/" target="_blank" class="profile__social-link"><i class="ri-linkedin-fill"></i></a>
+                        <a href="https://github.com/asmit1655" target="_blank" class="profile__social-link"><i class="ri-github-fill"></i></a>
+                    </ul>
+                </div>
+                <div class="profile__buttons">
+                    <a download="" href="assets/pdf/WebDev_Resume.pdf" class="button">Download Resume <i class="ri-arrow-down-circle-fill"></i></a>
+                    <div class="profile__buttons-small">
+                        <a href="https://api.whatsapp.com/send?phone=+91-7852944831&text=Hello, more information!" target="_blank" class="button button__small button__grey"><i class="ri-whatsapp-fill"></i></a>
+                        <a href="#" target="_blank" class="button button__small button__grey"><i class="ri-telegram-fill"></i></a>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!--=============== MAIN ===============-->
         <main class="main">
             <section class="filters container">
                 <!--=============== FILTERS TABS ===============-->
-
+                <ul class="filters__content">
+                    <button class="filters__button" data-target="#projects">Projects</button>
+                    <button class="filters__button" data-target="#skills">Skills</button>
+                </ul>
                 <div class="filters__sections">
                     <!--=============== PROJECTS ===============-->
-                    
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="assets/img/project1.png" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Frontend page for a company techshoot</span>
+                                    <h3 class="projects__title">Techshoot</h3>
+                                    <a href="https://techshoot-e03a8.web.app/" class="projects__button button button__small"><i class="ri-link-m"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project2.png" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Frontend page of Netflix</span>
+                                    <h3 class="projects__title">Netflix App</h3>
+                                    <a href="https://653b8cb1783fbf7a9f571ea9--effulgent-quokka-c6f49e.netlify.app/" class="projects__button button button__small"><i class="ri-link-m"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project3.png" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Temperature converter between kelvin , celcius , farenheit</span>
+                                    <h3 class="projects__title">Temperature Converter</h3>
+                                    <a href="https://asmit1655.github.io/TemperatureConverter/" class="projects__button button button__small"><i class="ri-link-m"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project4.png" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">A simple to do list</span>
+                                    <h3 class="projects__title">To-Do List</h3>
+                                    <a href="https://to-do-list-1655.netlify.app/" class="projects__button button button__small"><i class="ri-link-m"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
 
                     <!--=============== SKILLS ===============-->
-                    
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Frontend developer</h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">HTML5</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">CSS6</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">Javascript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">BootStrap</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">GitHub</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__area">
+                            <h3 class="skills__title">Backend developer</h3>
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">Node JS</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">Express JS</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">MongoDB</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">Mongoose</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-fill"></i>
+                                        <div>
+                                            <h3 class="skills__name">Netlify</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!--=============== FOOTER ===============-->
         <footer class="footer container">
-            
+            <span class="footer__copy">&#169; Asmit Ashutosh. All Rights Reserved </span>
         </footer>
 
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
